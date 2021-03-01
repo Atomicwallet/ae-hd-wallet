@@ -1,0 +1,93 @@
+{
+  "_from": "git://github.com/dschoeni/hd-wallet-js.git",
+  "_id": "@aeternity/hd-wallet@0.2.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@aeternity/hd-wallet",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "@aeternity/hd-wallet@git://github.com/dschoeni/hd-wallet-js.git",
+    "name": "@aeternity/hd-wallet",
+    "escapedName": "@aeternity%2fhd-wallet",
+    "scope": "@aeternity",
+    "rawSpec": "git://github.com/dschoeni/hd-wallet-js.git",
+    "saveSpec": "git://github.com/dschoeni/hd-wallet-js.git",
+    "fetchSpec": "git://github.com/dschoeni/hd-wallet-js.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/dschoeni/hd-wallet-js.git#b216450e56954a6e82ace0aade9474673de5d9d5",
+  "_spec": "@aeternity/hd-wallet@git://github.com/dschoeni/hd-wallet-js.git",
+  "_where": "/Users/trollcave/Projects/atomic-core",
+  "browser": "dist/wallet.browser.js",
+  "bugs": {
+    "url": "https://github.com/aeternity/wallet-js/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Till Kolter",
+      "email": "till.kolter@gmail.com"
+    },
+    {
+      "name": "Alexander Kahl",
+      "email": "ak@sodosopa.io"
+    },
+    {
+      "name": "Denis Davidyuk",
+      "email": "denis_davidyuk@hotmail.com"
+    }
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.46",
+    "bip32-path": "^0.4.2",
+    "postinstall-build": "^5.0.1",
+    "tweetnacl": "^1.0.0",
+    "tweetnacl-auth": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "HD Wallet for the æternity blockchain",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/register": "^7.0.0-beta.46",
+    "babel-core": "6",
+    "babel-loader": "^8.0.0-beta.2",
+    "bufferutil": "^3.0.3",
+    "chai": "^4.1.2",
+    "import-glob-loader": "^1.1.0",
+    "mocha": "^5.0.0",
+    "mocha-junit-reporter": "^1.17.0",
+    "prompt": "^1.0.0",
+    "sinon": "^4.2.2",
+    "standard": "*",
+    "standard-loader": "^6.0.1",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^3.1.1"
+  },
+  "homepage": "https://github.com/aeternity/wallet-js#readme",
+  "license": "ISC",
+  "main": "dist/wallet.js",
+  "name": "@aeternity/hd-wallet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeternity/wallet-js.git"
+  },
+  "files": "dist",
+  "scripts": {
+    "build": "webpack -p",
+    "build:dev": "webpack --mode=development",
+    "postinstall": "postinstall-build --only-as-dependency dist",
+    "test": "mocha --recursive --require @babel/register",
+    "test:watch": "mocha --recursive --require @babel/register --watch"
+  },
+  "version": "0.2.0"
+}
